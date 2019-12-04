@@ -2,6 +2,12 @@ package com.rule
 
 import com.javainuse.model.Product
 
+rule "Offer for Iron"
+	when
+		productObject: Product(type=="iron")
+	then
+		productObject.setDiscount(10);
+	end
 rule "Offer for Diamond"
 	when 
 		productObject: Product(type=="diamond")

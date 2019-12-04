@@ -37,7 +37,7 @@ public class DroolsTest {
 		WorkingMemory workingMemory = ruleBase.newStatefulSession();
 
 		Product product = new Product();
-		product.setType("diamond");
+		product.setType("iron");
 
 		workingMemory.insert(product);
 		workingMemory.fireAllRules();
